@@ -15,46 +15,46 @@ from MyModul import *
 # print(summa_3)
 
 
-# #(1)
-# a=int(input("Arv1: "))
-# t=input("Tehe: ")
-# b=int(input("Arv2: "))
-# vastus=arithmetic(a,b,t)
-# print(f"{a}{t}{b}=",vastus,sep="")
+#(1)
+a=int(input("Arv1: "))
+t=input("Tehe: ")
+b=int(input("Arv2: "))
+vastus=arithmetic(a,b,t)
+print(f"{a}{t}{b}=",vastus,sep="")
 
-# #(2)
-# from random import *
-# for i in range(5):
-#     aasta=randint(1900,2200)
-#     if is_year_leap(aasta):
-#         print(f"Aasta {aasta} on liigaasta")
-#     else:
-#         print(f"Aasta {aasta} on tavaline")
+#(2)
+from random import *
+for i in range(5):
+    aasta=randint(1900,2200)
+    if is_year_leap(aasta):
+        print(f"Aasta {aasta} on liigaasta")
+    else:
+        print(f"Aasta {aasta} on tavaline")
 
-# #(3)
-# a=float(input("Riidukulg: "))
-# S,P,D=square(a)
-# print("S=",S)
-# print("P=",P)
-# print("D=",D)
+#(3)
+a=float(input("Riidukulg: "))
+S,P,D=square(a)
+print("S=",S)
+print("P=",P)
+print("D=",D)
 
-# #(4)
-# nr=int(input("Kuu jarjakorranumber: "))
-# vastus=season(nr)
-# print(vastus)
+#(4)
+nr=int(input("Kuu jarjakorranumber: "))
+vastus=season(nr)
+print(vastus)
 
-# #(5)
-# summa=float(input("Summa: "))
-# aastad=int(input("Aastad: "))
-# summa=bank(summa,aastad)
-# print(f"{aastad} aasta parast summa on {summa}")
+#(5)
+summa=float(input("Summa: "))
+aastad=int(input("Aastad: "))
+summa=bank(summa,aastad)
+print(f"{aastad} aasta parast summa on {summa}")
 
-# #(6)
-# v=int(input("Sisesta arv: "))
-# if is_prime(v):
-#     print("Tavaline arv")
-# else:
-#     print("Liitarv")
+#(6)
+v=int(input("Sisesta arv: "))
+if is_prime(v):
+    print("Tavaline arv")
+else:
+    print("Liitarv")
     
 #(7)
 p=25
