@@ -111,3 +111,61 @@ def date_(paev:int,kuu:int,aasta:int)->bool:
     except:
         tulemus=False
     return tulemus
+
+
+    ####    ####
+
+def andmete_lisamine(i:list,p:list)->any:
+    """
+    
+    """
+    while True:
+        try:
+            n=int(input("Mitu inimest? "))
+            if n>0: break
+        except:
+            print("Viga. Provi uuesti!")
+    for j in range(n):
+        nimi=input("Nimi: ")
+        palk=int(input("Palk: "))
+        i.append(nimi)
+        p.append(palk)
+    return i,p
+def naita_andmed(i:list,p:list):
+    """
+    """
+    for j in range(len(i)):
+        print(i[j])     ####
+        
+def andmete_kustutamine(i:list,p:list)->any:
+    """
+    """
+    nimi=input("Keda kustutada ara?(nimi) ")
+    if nimi not in i:
+        print(f"{nimi} puudub")
+    else:
+        for j in range(len(i)):
+            if nimi in i:
+                p.pop(i.index(nimi))
+                i.remove(nimi)
+    return i,p
+def kellel_on_suurim_palk(i:list,p:list)->lisk:
+    """
+    """
+    nimed=[]    
+    max_palk=max(p)
+    ind=p.index(max_palk)
+    for palk in p:
+        if max_palk==palk:
+            nimi=i[p.index(palk,ind)]
+            nimed.append(nimi)
+            ind+=1
+    return nimed
+def sorteerimine(i:list,p:list)->any:
+    """
+    """
+    for b in range(n,len(i)):
+        if p[n]>p[m]:
+            p[n],p[m]=p[m],p[n]
+            i[n],i[m]=i[m],i[n]
+    return i,p
