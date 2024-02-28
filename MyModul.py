@@ -135,8 +135,7 @@ def naita_andmed(i:list,p:list):
     """
     """
     for j in range(len(i)):
-        print(i[j])     ####
-        
+        print(i[j],"-",p[j])
 def andmete_kustutamine(i:list,p:list)->any:
     """
     """
