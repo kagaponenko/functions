@@ -1,4 +1,4 @@
-# from MyModul import *
+﻿# from MyModul import *
 # # #1
 # # summa_3=Summa(5,8,12)
 # # print(summa_3)
@@ -62,3 +62,6 @@
 # a=2025
 # t=date_(p,k,a)
 # print(t)
+ 
+
+    ####    ####
